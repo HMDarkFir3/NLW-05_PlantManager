@@ -27,7 +27,7 @@ Um aplicativo que ajuda a lembrar a hora de regar suas plantas.
 
 ## 📂 Como rodar este projeto
 
-Para clonar e executar este aplicativo, você precisará de [Git](https://git-scm.com) e [NodeJs](https://nodejs.org/en/) Instalado em seu computador.
+Para clonar e executar este aplicativo, você precisará de [Git](https://git-scm.com), [NodeJs](https://nodejs.org/en/) e [Android Studio](https://developer.android.com/studio) Instalado em seu computador.
 
 ### 🌀 Clonando o repositório
 
@@ -56,8 +56,8 @@ $ expo start
  
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-- [React Native](https://reactjs.org)
-- [Expo](https://nextjs.org)
+- [React Native](https://reactnative.dev)
+- [Expo](https://docs.expo.io)
 - [TypeScript](https://www.typescriptlang.org)
 
 ---
