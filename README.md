@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center" >
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/hmdarkfir3NLW-05_PlantManager" />
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/hmdarkfir3/NLW-05_PlantManager" />
   
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/hmdarkfir3/NLW-05_PlantManager">
   
