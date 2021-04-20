@@ -60,6 +60,9 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [React Native](https://reactnative.dev)
 - [Expo](https://docs.expo.io)
 - [TypeScript](https://www.typescriptlang.org)
+- [React Navigation](https://reactnavigation.org)
+- [expo-font](https://docs.expo.io/versions/latest/sdk/font/)
+- [expo-app-loading](https://docs.expo.io/versions/latest/sdk/app-loading/)
 
 ---
 
