@@ -1,5 +1,6 @@
 //Style
 import { StyleSheet } from "react-native";
+import fonts from "../../styles/fonts";
 import colors from "../../styles/colors";
 
 export const styles = StyleSheet.create({
@@ -8,6 +9,11 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
 
     backgroundColor: colors.green,
-    borderRadius: 16,
+    borderRadius: 20,
+  },
+  text: {
+    fontFamily: fonts.text,
+    fontSize: 20,
+    color: "#ffffff",
   },
 });
