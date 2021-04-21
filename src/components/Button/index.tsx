@@ -13,13 +13,9 @@ interface ButtonProps extends TouchableOpacityProps {
   icon: any;
 }
 
-export default function Welcome({
-  height,
-  width,
-  text,
-  icon,
-  ...rest
-}: ButtonProps) {
+export default function Welcome(props: ButtonProps) {
+  const { height, width, text, icon, ...rest } = props;
+
   return (
     <TouchableOpacity
       style={[styles.containerButton, { height: height, width: width }]}

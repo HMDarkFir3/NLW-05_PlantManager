@@ -1,5 +1,6 @@
 //Style
 import { StyleSheet, Dimensions } from "react-native";
+import { getStatusBarHeight } from "react-native-iphone-x-helper";
 import fonts from "../../styles/fonts";
 import colors from "../../styles/colors";
 
@@ -24,7 +25,7 @@ export const styles = StyleSheet.create({
     lineHeight: 38,
   },
   titleAndroid: {
-    marginTop: 25 + margin,
+    marginTop: getStatusBarHeight() + margin,
 
     textAlign: "center",
     fontFamily: fonts.heading,

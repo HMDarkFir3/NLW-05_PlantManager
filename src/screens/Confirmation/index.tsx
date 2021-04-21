@@ -3,7 +3,7 @@ import React from "react";
 import { SafeAreaView, View, Text } from "react-native";
 
 //React Navigation
-import { useRoute } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 
 //Component
 import Button from "../../components/Button";
@@ -12,6 +12,12 @@ import Button from "../../components/Button";
 import { styles } from "./styles";
 
 export default function Confirmation() {
+  const navigation = useNavigation();
+
+  function handleStart() {
+    navigation.navigate("PlantSelect");
+  }
+
   return (
     <SafeAreaView style={styles.containerConfirmation}>
       <View style={styles.content}>
@@ -21,7 +27,13 @@ export default function Confirmation() {
           Agora vamos começar a cuidar das suas plantinhas com muito cuidado.
         </Text>
 
-        <Button height={56} width={231} text="Começar" icon="" />
+        <Button
+          height={56}
+          width={231}
+          text="Começar"
+          icon=""
+          onPress={handleStart}
+        />
       </View>
     </SafeAreaView>
   );
