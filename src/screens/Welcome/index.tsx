@@ -50,7 +50,6 @@ export default function Welcome() {
             width={56}
             text=""
             icon={<Feather name="chevron-right" size={32} color="#ffffff" />}
-            disabled={false}
             onPress={handleStart}
           />
         </View>

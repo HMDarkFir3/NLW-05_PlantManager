@@ -1,5 +1,5 @@
-//React
 import "react-native-gesture-handler";
+//React
 import React from "react";
 
 //Expo
@@ -12,9 +12,6 @@ import {
 
 //Route
 import Routes from "./src/routes";
-
-//Component
-import Welcome from "./src/screens/Welcome";
 
 export default function App() {
   const [fontsLoaded] = useFonts({

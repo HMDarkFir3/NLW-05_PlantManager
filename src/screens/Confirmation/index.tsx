@@ -27,13 +27,7 @@ export default function Confirmation() {
           Agora vamos começar a cuidar das suas plantinhas com muito cuidado.
         </Text>
 
-        <Button
-          height={56}
-          width={231}
-          text="Começar"
-          icon=""
-          onPress={handleStart}
-        />
+        <Button height={56} width={231} text="Começar" onPress={handleStart} />
       </View>
     </SafeAreaView>
   );

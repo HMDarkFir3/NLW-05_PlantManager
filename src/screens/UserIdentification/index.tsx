@@ -84,7 +84,6 @@ export default function UserIdentification() {
                 height={56}
                 width={231}
                 text="Confirmar"
-                icon=""
                 onPress={handleSubmit}
               />
             </View>

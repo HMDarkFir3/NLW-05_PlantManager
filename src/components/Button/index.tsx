@@ -1,23 +1,24 @@
 //React
 import React from "react";
-import { Text, TouchableOpacity, TouchableOpacityProps } from "react-native";
+import { Text } from "react-native";
+import { RectButton, RectButtonProps } from "react-native-gesture-handler";
 
 //Style
 import { styles } from "./styles";
 
 //Interface
-interface ButtonProps extends TouchableOpacityProps {
+interface ButtonProps extends RectButtonProps {
   height: number;
   width: number;
   text: string;
-  icon: any;
+  icon?: any;
 }
 
 export default function Welcome(props: ButtonProps) {
   const { height, width, text, icon, ...rest } = props;
 
   return (
-    <TouchableOpacity
+    <RectButton
       style={[styles.containerButton, { height: height, width: width }]}
       activeOpacity={0.7}
       {...rest}
@@ -27,6 +28,6 @@ export default function Welcome(props: ButtonProps) {
       ) : (
         <Text style={styles.text}>{text}</Text>
       )}
-    </TouchableOpacity>
+    </RectButton>
   );
 }

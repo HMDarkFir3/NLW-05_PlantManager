@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
 
     marginTop: getStatusBarHeight(),
     paddingVertical: 40,
-    paddingHorizontal: 20,
+    paddingHorizontal: 30,
   },
   greeting: {
     fontFamily: fonts.text,
