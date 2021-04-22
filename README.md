@@ -68,6 +68,8 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [expo-google-fonts](https://docs.expo.io/guides/using-custom-fonts/#using-a-google-font)
 - [expo-app-loading](https://docs.expo.io/versions/latest/sdk/app-loading/)
 - [lottie-react-native](https://github.com/lottie-react-native/lottie-react-native)
+- [react-native-svg](https://github.com/react-native-svg/react-native-svg)
+- [react-native-iphone-x-helper](https://github.com/ptelad/react-native-iphone-x-helper)
 
 ---
 
