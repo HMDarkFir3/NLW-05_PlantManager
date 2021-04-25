@@ -4,7 +4,7 @@ import {
   SafeAreaView,
   View,
   Text,
-  Image,
+  ScrollView,
   Platform,
   Alert,
   TouchableOpacity,
@@ -26,9 +26,6 @@ import TipPlant from "../../components/TipPlant";
 
 //Style
 import { styles } from "./styles";
-
-//Image
-import waterdropImg from "../../assets/waterdrop.png";
 
 //Interface
 import { PlantProps } from "../../libs/storage";
@@ -94,49 +91,55 @@ export default function PlantSave() {
   }
 
   return (
-    <SafeAreaView style={styles.containerPlantSave}>
+    <>
       <View style={styles.backButton}>
         <BackButton onPress={() => handleBackButton()} />
       </View>
-      <View style={styles.plantInfo}>
-        <SvgFromUri uri={plant.photo} width={150} height={150} />
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <SafeAreaView style={styles.containerPlantSave}>
+          <View style={styles.plantInfo}>
+            <SvgFromUri uri={plant.photo} width={150} height={150} />
 
-        <Text style={styles.plantName}>{plant.name}</Text>
-        <Text style={styles.plantAbout}>{plant.about}</Text>
-      </View>
+            <Text style={styles.plantName}>{plant.name}</Text>
+            <Text style={styles.plantAbout}>{plant.about}</Text>
+          </View>
 
-      <View style={styles.controller}>
-        <TipPlant text={plant.water_tips} />
-        <Text style={styles.alertLabel}>
-          Escolha o melhor horário para ser lembrado:
-        </Text>
+          <View style={styles.controller}>
+            <View style={styles.tipContainer}>
+              <TipPlant text={plant.water_tips} />
+            </View>
+            <Text style={styles.alertLabel}>
+              Escolha o melhor horário para ser lembrado:
+            </Text>
 
-        {showDatePicker && (
-          <DateTimePicker
-            value={selectedDateTime}
-            mode="time"
-            display="spinner"
-            onChange={handleChangeTime}
-          />
-        )}
+            {showDatePicker && (
+              <DateTimePicker
+                value={selectedDateTime}
+                mode="time"
+                display="spinner"
+                onChange={handleChangeTime}
+              />
+            )}
 
-        {Platform.OS === "android" && (
-          <TouchableOpacity onPress={handleOpenDateTimePickerForAndroid}>
-            <Text style={styles.dataTimePickerText}>{`
+            {Platform.OS === "android" && (
+              <TouchableOpacity onPress={handleOpenDateTimePickerForAndroid}>
+                <Text style={styles.dataTimePickerText}>{`
               Mudar ${format(selectedDateTime, "HH:mm")}
             `}</Text>
-          </TouchableOpacity>
-        )}
+              </TouchableOpacity>
+            )}
 
-        <View style={styles.button}>
-          <Button
-            width={311}
-            height={56}
-            text="Cadastrar planta"
-            onPress={() => handleSave()}
-          />
-        </View>
-      </View>
-    </SafeAreaView>
+            <View style={styles.button}>
+              <Button
+                width={311}
+                height={56}
+                text="Cadastrar planta"
+                onPress={() => handleSave()}
+              />
+            </View>
+          </View>
+        </SafeAreaView>
+      </ScrollView>
+    </>
   );
 }

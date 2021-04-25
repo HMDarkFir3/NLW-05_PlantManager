@@ -12,11 +12,14 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.shape,
   },
   backButton: {
+    position: "absolute",
+
     paddingHorizontal: 20,
     paddingTop: 20,
+
+    zIndex: 10,
   },
   plantInfo: {
-    flex: 1,
     alignItems: "center",
     justifyContent: "center",
 
@@ -50,7 +53,10 @@ export const styles = StyleSheet.create({
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
   },
-
+  tipContainer: {
+    position: "relative",
+    bottom: 40,
+  },
   alertLabel: {
     marginTop: 20,
 

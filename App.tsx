@@ -1,8 +1,9 @@
-import "react-native-gesture-handler";
 //React
-import React from "react";
+import "react-native-gesture-handler";
+import React, { useEffect } from "react";
 
 //Expo
+import * as Notifications from "expo-notifications";
 import AppLoading from "expo-app-loading";
 import {
   useFonts,
@@ -12,6 +13,9 @@ import {
 
 //Route
 import Routes from "./src/routes";
+
+//Interface
+import { PlantProps } from "./src/libs/storage";
 
 export default function App() {
   const [fontsLoaded] = useFonts({

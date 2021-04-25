@@ -43,4 +43,19 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     color: colors.body_dark,
   },
+  buttonRemove: {
+    alignItems: "center",
+    justifyContent: "center",
+    position: "relative",
+    right: 20,
+
+    width: 120,
+    height: 82,
+
+    marginTop: 13,
+    paddingLeft: 10,
+
+    backgroundColor: colors.red,
+    borderRadius: 20,
+  },
 });
