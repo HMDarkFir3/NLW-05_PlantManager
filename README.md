@@ -61,6 +61,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [Expo](https://docs.expo.io)
 - [TypeScript](https://www.typescriptlang.org)
 - [React Navigation](https://reactnavigation.org)
+- [Async Storage](https://react-native-async-storage.github.io/async-storage/docs/install/)
 - [axios](https://github.com/axios/axios)
 - [json-server](https://github.com/typicode/json-server)
 - [expo-status-bar](https://docs.expo.io/guides/configuring-statusbar/#how-is-expo-status-bar-different-from-the-statusbar)
