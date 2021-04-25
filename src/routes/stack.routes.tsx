@@ -2,14 +2,16 @@
 import React from "react";
 
 //React Navigation
-import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 //Screen
 import Welcome from "../screens/Welcome";
 import UserIdentification from "../screens/UserIdentification";
 import Confirmation from "../screens/Confirmation";
-import PlantSelect from "../screens/PlantSelect";
+import PlantSave from "../screens/PlantSave";
+
+//Route
+import AuthRoutes from "./tab.routes";
 
 //Style
 import colors from "../styles/colors";
@@ -29,7 +31,9 @@ export default function AppRoutes() {
       <Stack.Screen name="Welcome" component={Welcome} />
       <Stack.Screen name="UserIdentification" component={UserIdentification} />
       <Stack.Screen name="Confirmation" component={Confirmation} />
-      <Stack.Screen name="PlantSelect" component={PlantSelect} />
+      <Stack.Screen name="PlantSelect" component={AuthRoutes} />
+      <Stack.Screen name="PlantSave" component={PlantSave} />
+      <Stack.Screen name="MyPlant" component={AuthRoutes} />
     </Stack.Navigator>
   );
 }

@@ -15,14 +15,11 @@ interface PlantCardPrimaryProps extends TouchableOpacityProps {
 }
 
 export default function PlantCardPrimary(props: PlantCardPrimaryProps) {
-  const { name, photo, ...rest } = props.data;
+  const { ...rest } = props;
+  const { name, photo } = props.data;
 
   return (
-    <TouchableOpacity
-      style={styles.containerPlantCardPrimary}
-      activeOpacity={0.7}
-      {...rest}
-    >
+    <TouchableOpacity style={styles.containerPlantCardPrimary} {...rest}>
       <SvgFromUri uri={photo} height={70} width={70} />
       <Text style={styles.text}>{name}</Text>
     </TouchableOpacity>
