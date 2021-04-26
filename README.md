@@ -4,7 +4,7 @@
 </p>
 
 <h1 align="center">
-  🚧 Em Construção... 🚧
+  🚀 Concluído 🚀
 </h1>
 
 <p align="center" >
@@ -49,6 +49,10 @@ $ yarn install
 # Execute a Aplicação em Desenvolvimento
 $ expo start
 
+#Execute o servidor da API
+$ yarn server
+
+# O servidor inciará na porta:3333 - acesse http://localhost:3333
 ```
 
 ---
@@ -61,8 +65,11 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [Expo](https://docs.expo.io)
 - [TypeScript](https://www.typescriptlang.org)
 - [React Navigation](https://reactnavigation.org)
+- [Async Storage](https://react-native-async-storage.github.io/async-storage/docs/install/)
 - [axios](https://github.com/axios/axios)
+- [date-fns](https://date-fns.org)
 - [json-server](https://github.com/typicode/json-server)
+- [expo-notifications](https://docs.expo.io/versions/latest/sdk/notifications/)
 - [expo-status-bar](https://docs.expo.io/guides/configuring-statusbar/#how-is-expo-status-bar-different-from-the-statusbar)
 - [expo-font](https://docs.expo.io/versions/latest/sdk/font/)
 - [expo-google-fonts](https://docs.expo.io/guides/using-custom-fonts/#using-a-google-font)
