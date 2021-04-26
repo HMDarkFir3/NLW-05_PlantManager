@@ -49,6 +49,10 @@ $ yarn install
 # Execute a Aplicação em Desenvolvimento
 $ expo start
 
+#Execute o servidor da API
+$ yarn server
+
+# O servidor inciará na porta:3333 - acesse http://localhost:3333
 ```
 
 ---
