@@ -13,8 +13,6 @@
   
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/hmdarkfir3/NLW-05_PlantManager?style=for-the-badge">
   
-  <img alt="Repository issues size" src="https://img.shields.io/github/issues/hmdarkfir3/NLW-05_PlantManager?style=for-the-badge">
-  
   <img alt="License" src="https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge" />
 </p>
   
